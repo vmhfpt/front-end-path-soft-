@@ -74,7 +74,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-   
+  
    
     .row>* {
         flex-shrink: 0;
@@ -99,12 +99,51 @@ body {
     .col-10 {width: 83.33% !important;}
     .col-11 {width: 91.66% !important;}
     .col-12 {width: 100% !important;}
-   
+    .app-new__content-flex-item {
+        flex-direction: column;
+      }
+      .app-new__content-flex {
+       width : 320px;
+    
+       display : flex;
+       
+      }
+      .app-new__content {
+       width : 100%;
+      
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+      }
+      .app-new__content-flex-item-img {
+       flex: 0 0 100%;
+   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
+   .app-new__content-flex-item {
+     flex-direction: column;
+   }
+   .app-new__content-flex {
+    width : 320px;
+ 
+    display : flex;
+    
+   }
+   .app-new__content {
+    width : 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .app-new__content-flex-item-img {
+    flex: 0 0 100%;
+}
+   
+   
+    
     .row>* {
         max-width: 100%;
         padding-right: calc(1.5rem * .5);
@@ -137,6 +176,26 @@ body {
         
     }
    
+
+    .app-new__content-flex-item {
+        flex-direction: row;
+      }
+      .app-new__content-flex {
+       width : 100%;
+    
+       display : flex;
+       
+      }
+      .app-new__content {
+       width : 100%;
+      
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+      }
+      .app-new__content-flex-item-img {
+        flex : 0 0 265px;
+   }
   
     
   .col-md-1 {width: 8.33%;}

@@ -7,26 +7,596 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./css/grid.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
+    <link href="./responsive/product.css" rel="stylesheet">
+    <link href="./responsive/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-   <footer class="app-footer container-fluid">
+   <header class="app-header container-fluid">
+    
      <div class="container">
-       
+        <div class="app-header__content">
+          <div class="app-header__content-left">
+              <ul class="">
+                <a href="" ><li class=""><i class="fa fa-envelope-o" aria-hidden="true"></i> mail@example.com</li></a>
+                <a href="" ><li class=""><i class="fa fa-phone" aria-hidden="true"></i>+1-888-777-1234</li></a>
+                <a href="" ><li class=""><i class="fa fa-clock-o" aria-hidden="true"></i> Mon-fri:9:00 - 18:00</li></a>
+             
+              </ul>
+          </div>
+          <div class="app-header__content-right">
+               <ul class="">
+                  <a href="" class=""><li class=""><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+                  <a href="" class=""><li class=""><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+
+
+                  <a href="" ><li class=""><i class="fa fa-twitter" aria-hidden="true"></i> </li></a>
+                    <a href="" class=""><li class=""><i class="fa fa-vimeo" aria-hidden="true"></i></li></a>
+               </ul>
+               <div class="app-header__content-right-callback">
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                <span>Callback</span>
+               </div>
+          </div>
+        </div>
      </div>
-   </footer>
-   <nav class="container-fluid">
+   </header>
+   <div class="overlay"></div>
+   <nav id="navbar" class="app-nav container-fluid">
+    
       <div class="container">
-          
+           <div class="app-nav__content">
+           
+               <div class="app-nav__content-item absolute-icon">
+                <div class="app-nav__content-item-icon-nav">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                 <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/06/logo.svg" alt="" class="">
+                
+               </div>
+               <div class="app-nav__content-item ">
+                   <ul class="">
+                    <a href="" class=""><li class="app-nav__content-item-title-li-active">
+                      <span class="app-nav__content-item-title app-nav__content-item-title-active">Pre-Built-Sites </span>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      <span class="app-nav__content-item-hot">hot</span>
+                    
+                    </li></a>
+
+                    <a href="" class="">
+                      <li class="">
+                        
+                      <span class="app-nav__content-item-title ">Sections </span>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      
+                      <span class="app-nav__content-item-hot">hot</span>
+                     
+                    </li></a>
+
+                    <a href="" class=""><li class="">
+                      <span class="app-nav__content-item-title ">Online store</span>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      <ul class="app-nav__content-item-child">
+                        <a href="" class=""><li class="">Page home</li></a>
+                        <a href="" class=""><li class="">Menu 2 </li></a>
+                        <a href="" class=""><li class="">Menu 3</li></a>
+                        <a href="" class=""><li class="">Menu 4</li></a>
+                       </ul>
+                    
+                    </li></a>
+
+                    <a href="" class=""><li class="">
+                      <span class="app-nav__content-item-title ">Pages</span>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                       <ul class="app-nav__content-item-child">
+                        <a href="" class=""><li class="">Page home</li></a>
+                        <a href="" class=""><li class="">Menu 2 </li></a>
+                        <a href="" class=""><li class="">Menu 3</li></a>
+                        <a href="" class=""><li class="">Menu 4</li></a>
+                       </ul>
+                    
+                    </li></a>
+ 
+                    <a href="" class=""><li class="">
+                      <span class="app-nav__content-item-title ">News</span>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      <ul class="app-nav__content-item-child">
+                        <a href="" class=""><li class="">Page home</li></a>
+                        <a href="" class=""><li class="">Menu 2 </li></a>
+                        <a href="" class=""><li class="">Menu 3</li></a>
+                        <a href="" class=""><li class="">Menu 4</li></a>
+                       </ul>
+                    
+                    </li></a>
+                    <a href="" class=""><li class="">
+                      <span class="app-nav__content-item-title ">Contacts</span>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      <ul class="app-nav__content-item-child">
+                        <a href="" class=""><li class="">Page home</li></a>
+                        <a href="" class=""><li class="">Menu 2 </li></a>
+                        <a href="" class=""><li class="">Menu 3</li></a>
+                        <a href="" class=""><li class="">Menu 4</li></a>
+                       </ul>
+                    
+                    </li></a>
+
+                   </ul>
+               </div>
+               <div class="app-nav__content-item ">
+
+                    <ul class="">
+                         <li class=""><i class="fa fa-sign-in" aria-hidden="true"></i></li>
+                         <li class=""><i class="fa fa-heart-o" aria-hidden="true"></i>
+                          <div class="cart-quantity"> 2</div></li>
+                         <li class=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="cart-quantity"> 0</div>
+                        
+                        </li>
+                         <li class=""><i class="fa fa-search" aria-hidden="true"></i></li>
+                    </ul>
+               </div>
+           </div>
       </div>
    </nav>
    <main>
-      
+      <section class="app-first-section container-fluid">
+         <div class="container">
+            <div class="app-first-section__content">
+                <div class="app-first-section__content-top">
+                    <span class="">multipurpose</span>
+                    <h1 class="">#1 The Fastest WordPress theme</h1>
+                    <p class="">You can create a website for any business. The template has many different sections and section types from which you can create your own unique website.</p>
+                </div>
+                <div class="app-first-section__content-bottom">
+                  <button class="">Buy now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                    <div class="app-first-section__content-bottom-play"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                </div>
+            </div>
+         </div>
+      </section>
+      <section class="app-second-section container-fluid">
+         <div class="container">
+             <div class="app-second-section__contents">
+              <div class="app-second-section__title">
+                <span class="">areas what we serv</span>
+                <h1 class="">Our services</h1>
+              </div>
+              <div class="app-second-section__content">
+                <div class="app-second-section__content-item">
+                    <div class="app-second-section__content-item-icon"><i class="fa fa-building" aria-hidden="true"></i></div>
+                    <div class="app-second-section__content-item-title"><h3 class="">Corporate Solution</h3></div>
+                    <div class="app-second-section__content-item-detail"><span class="">We embrace holistic development and support for employees with the aim.</span></div>
+                </div>
+                <div class="app-second-section__content-item">
+                  <div class="app-second-section__content-item-icon"><i class="fa fa-building" aria-hidden="true"></i></div>
+                  <div class="app-second-section__content-item-title"><h3 class="">Corporate Solution</h3></div>
+                  <div class="app-second-section__content-item-detail"><span class="">We embrace holistic development and support for employees with the aim.</span></div>
+              </div>
+              <div class="app-second-section__content-item">
+                <div class="app-second-section__content-item-icon"><i class="fa fa-building" aria-hidden="true"></i></div>
+                <div class="app-second-section__content-item-title"><h3 class="">Corporate Solution</h3></div>
+                <div class="app-second-section__content-item-detail"><span class="">We embrace holistic development and support for employees with the aim.</span></div>
+            </div>
+     
+              </div>
+              <div class="app-second-section__button">
+                <button class="">Buy now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+              </div>
+             </div>
+         </div>
+      </section>
+      <section class="app-third-section container-fluid">
+         <div class="container">
+          <div class="app-second-section__title">
+            <span class="">some reasons</span>
+            <h1 class="">Why choose Us</h1>
+          </div>
+          <div class="app-third-section__content">
+            <div class="app-third-section__content-item">
+                <div class="app-third-section__content-item-left">
+                      <div class="app-third-section__content-item-number">01 </div>
+                </div>
+                <div class=" app-third-section__content-item-right">
+                    <h1 class="">High Quality Hardware</h1>
+                    <p class="">We use top-notch hardware to develop the most efficient apps for our customers</p>
+                </div>
+            </div>
+            <div class="app-third-section__content-item">
+              <div class="app-third-section__content-item-left">
+                    <div class="app-third-section__content-item-number">02 </div>
+              </div>
+              <div class=" app-third-section__content-item-right">
+                  <h1 class="">Dedicated 247 Support</h1>
+                  <p class="">You can rely on our 24/7 tech support that will gladly solve any app issue you may have.</p>
+              </div>
+          </div>
+          <div class="app-third-section__content-item">
+            <div class="app-third-section__content-item-left">
+                  <div class="app-third-section__content-item-number">03 </div>
+            </div>
+            <div class=" app-third-section__content-item-right">
+                <h1 class="">30-Day Money-back Guarantee</h1>
+                <p class="">If you are not satisfied with our apps, we will return your money in the first 30 days.</p>
+            </div>
+        </div>
+        <div class="app-third-section__content-item">
+          <div class="app-third-section__content-item-left">
+                <div class="app-third-section__content-item-number">04 </div>
+          </div>
+          <div class=" app-third-section__content-item-right">
+              <h1 class="">Agile and Fast Working Style</h1>
+              <p class="">This type of approach to our work helps our specialists to quickly develop better apps.</p>
+          </div>
+      </div>
+      <div class="app-third-section__content-item">
+        <div class="app-third-section__content-item-left">
+              <div class="app-third-section__content-item-number">05 </div>
+        </div>
+        <div class=" app-third-section__content-item-right">
+            <h1 class="">Some Apps are Free</h1>
+            <p class="">We also develop free apps that can be downloaded online without any payments.</p>
+        </div>
+    </div>
+    <div class="app-third-section__content-item">
+      <div class="app-third-section__content-item-left">
+            <div class="app-third-section__content-item-number">06 </div>
+      </div>
+      <div class=" app-third-section__content-item-right">
+          <h1 class="">High Quality Hardware</h1>
+          <p class="">All our products have high usability allowing users to easily operate the apps.</p>
+      </div>
+  </div>
+          </div>
+         </div>
+      </section>
+      <section class="app-fourth-section container-fluid">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="app-fourth-section-left">
+                        <div class="app-fourth-section-left-elipt-absolute"></div>
+                           <div class="app-fourth-section-left-elipt">
+                              <span class="">10</span>
+                              <p class="">Years Of Experience</p>
+                           </div>
+                         
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="app-fourth-section-right">
+                           <div class="app-fourth-section-right-item">
+                                <h1 class="">34</h1>
+                                <span class="">Apps Developed</span>
+                           </div>
+                           <div class="app-fourth-section-right-item">
+                            <h1 class="">149</h1>
+                            <span class="">Consultans</span>
+                       </div>
+                       <div class="app-fourth-section-right-item">
+                        <h1 class="">160</h1>
+                        <span class="">Employers</span>
+                   </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="app-fifth-section container-fluid">
+         <div class="container">
+          <div class="app-second-section__title">
+            <span class="">out works</span>
+            <h1 class="">Latest Projects</h1>
+          </div>
+
+          <div class="app-fifth-section__nav">
+             <ul class="">
+             <a href="" class=""><li class="app-fifth-section__nav-active">All</li></a>
+             <a href="" class=""><li class="">UI/UX design</li></a>
+             <a href="" class=""><li class="">custom software</li></a>
+             <a href="" class=""><li class="">qa testing</li></a>
+             <a href="" class=""><li class="">mobile apps</li></a>
+             </ul>
+          </div>
+
+          <div class="app-fifth-section__content">
+              <div class="app-fifth-section__content-item">
+                <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/mplanner-768x384.jpg.webp" alt="" class="">
+              </div>
+              <div class="app-fifth-section__content-item">
+                 <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/weathernow-768x384.jpg.webp" alt="" class="">
+              </div>
+              <div class="app-fifth-section__content-item">
+                <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/langer-messenger-768x384.jpg.webp" alt="" class="">
+              </div>
+              <div class="app-fifth-section__content-item">
+                <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/mobile-finance-768x384.jpg.webp" alt="">
+              </div>
+              <div class="app-fifth-section__content-item">
+                <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/raptcash-768x384.jpg.webp" alt="" class="">
+              </div>
+              <div class="app-fifth-section__content-item"><img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/search-by-photo-768x384.jpg.webp" alt="" class=""></div>
+          </div>
+          <div class="app-second-section__button">
+            <button class="">All projects <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+          </div>
+         </div>
+      </section>
+
+      <section class="app-sixth-section container-fluid">
+         <div class="container">
+          <div class="app-second-section__title">
+            <span class="">who we are</span>
+            <h1 class="">Meet The Team    
+
+
+
+            </h1>
+          </div>
+            <div class="app-sixth-section__content">
+                  <div class="app-sixth-section__content-item">
+                     <div class="">
+                         <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/t1.jpg.webp" alt="" class="">
+                     </div>
+                     <div class="app-sixth-section__content-item-detail">
+                        <h2 class="">Mary Lee</h2>
+                        <span class="">Software Developer</span>
+                     </div>
+                  </div>
+                  <div class="app-sixth-section__content-item">
+                    <div class="">
+                        <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/t2.jpg.webp" alt="" class="">
+                    </div>
+                    <div class="app-sixth-section__content-item-detail">
+                       <h2 class="">Mary Lee</h2>
+                       <span class="">Software Developer</span>
+                    </div>
+                 </div>
+                 <div class="app-sixth-section__content-item">
+                  <div class="">
+                      <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/t3.jpg.webp" alt="" class="">
+                  </div>
+                  <div class="app-sixth-section__content-item-detail">
+                     <h2 class="">Mary Lee</h2>
+                     <span class="">Software Developer</span>
+                  </div>
+               </div>
+               <div class="app-sixth-section__content-item">
+                <div class="">
+                    <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/t4.jpg.webp" alt="" class="">
+                </div>
+                <div class="app-sixth-section__content-item-detail">
+                   <h2 class="">Mary Lee</h2>
+                   <span class="">Software Developer</span>
+                </div>
+             </div>
+            </div>
+         </div>
+      </section>
+
+
+      <section class="app-seventh-section container-fluid">
+         <div class="container">
+          <div class="app-second-section__title">
+            <span class="">reviews from our clients</span>
+            <h1 class="">What People Say   
+
+
+
+            </h1>
+          </div>
+          <div class="app-seventh-section-contents">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 col-sm-12">
+                <div class="app-seventh-section-content">
+                    <div class="app-seventh-section-content-detail">
+                         <div class="app-seventh-section-content-img">
+                          <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/auth-img-1.jpg.webp" alt="" class="">
+                        </div>
+                         <div class="app-seventh-section-content-author">
+                          <h3 class="">Catherine Williams</h3>
+                          <span class="">Regular client</span>
+                        </div>
+                    </div>
+                    <div class="app-seventh-section-content-detail-title">
+                       <p class="">PathSoft offers a high caliber of resources skilled in Microsoft Azure.NET, mobile and Quality Assurance. They became our true business partners over the past three years.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 col-sm-12"> <div class="app-seventh-section-content">
+                <div class="app-seventh-section-content-detail">
+                     <div class="app-seventh-section-content-img">
+                      <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/auth-img-1.jpg.webp" alt="" class="">
+                    </div>
+                     <div class="app-seventh-section-content-author">
+                      <h3 class="">Catherine Williams</h3>
+                      <span class="">Regular client</span>
+                    </div>
+                </div>
+                <div class="app-seventh-section-content-detail-title">
+                   <p class="">PathSoft offers a high caliber of resources skilled in Microsoft Azure.NET, mobile and Quality Assurance. They became our true business partners over the past three years.</p>
+                </div>
+            </div></div>
+              <div class="col-md-6 col-lg-4 col-sm-12"> <div class="app-seventh-section-content">
+                <div class="app-seventh-section-content-detail">
+                     <div class="app-seventh-section-content-img">
+                      <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/auth-img-1.jpg.webp" alt="" class="">
+                    </div>
+                     <div class="app-seventh-section-content-author">
+                      <h3 class="">Catherine Williams</h3>
+                      <span class="">Regular client</span>
+                    </div>
+                </div>
+                <div class="app-seventh-section-content-detail-title">
+                   <p class="">PathSoft offers a high caliber of resources skilled in Microsoft Azure.NET, mobile and Quality Assurance. They became our true business partners over the past three years.</p>
+                </div>
+            </div></div>
+           </div>
+          </div>
+         </div>
+      </section>
+
+
+      <section class="app-last-section container-fluid">
+         <div class="container">
+          <div class="app-second-section__title">
+            <span class="">more info about</span>
+            <h1 class="">Latest News  
+
+
+
+            </h1>
+          </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="app-last-section-item">
+                      <div class="app-last-section-item-img">
+                         <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/call-center-solutions-768x384.jpg.webp" alt="" class="">
+                         <div class="app-last-section-item-date">
+                               <span class="">May 24, 2021</span>
+                         </div>
+                      </div>
+                      <div class="app-last-section-item-content">
+                        <a href="" class=""><h3 class="">Convert more visitors into potential cu</h3></a>
+
+                        <p class="">Whenever I’m TA for a introductory CSS class where students learn [...]</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6"> <div class="app-last-section-item">
+                  <div class="app-last-section-item-img">
+                     <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/call-center-solutions-768x384.jpg.webp" alt="" class="">
+                     <div class="app-last-section-item-date">
+                           <span class="">May 24, 2021</span>
+                     </div>
+                  </div>
+                  <div class="app-last-section-item-content">
+                    <a href="" class=""><h3 class="">Convert more visitors into potential cu</h3></a>
+
+                    <p class="">Whenever I’m TA for a introductory CSS class where students learn [...]</p>
+                  </div>
+              </div></div>
+                <div class="col-lg-4 col-sm-6"> <div class="app-last-section-item">
+                  <div class="app-last-section-item-img">
+                     <img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/05/call-center-solutions-768x384.jpg.webp" alt="" class="">
+                     <div class="app-last-section-item-date">
+                           <span class="">May 24, 2021</span>
+                     </div>
+                  </div>
+                  <div class="app-last-section-item-content">
+                    <a href="" class=""><h3 class="">Convert more visitors into potential cu</h3></a>
+
+                    <p class="">Whenever I’m TA for a introductory CSS class where students learn [...]</p>
+                  </div>
+              </div></div>
+            </div>
+            <div class="app-second-section__button">
+              <button class="">All New <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+            </div>
+         </div>
+      </section>
    </main>
-   <header class="app-header container-fluid">
+   <footer class="app-footer container-fluid">
        <div class="container">
-        
+             <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="app-footer__item">
+                        <div class=""><img src="https://pathsoft.kovalweb.com/original/wp-content/uploads/2021/06/logo-white.svg" alt="" class=""></div>
+                        <div class="app-footer__item-title"><span class="">Our company has been developing high-quality and reliable software for corporate needs since 2008. We are renowned professionals of software development.</span>
+                        </div>
+                        <div class="app-footer__item-socialite">
+                           <ul class="">
+                               <a href="" class=""><li class=""> <i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+                               <a href="" class=""><li class=""><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+                               <a href="" class=""><li class=""><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+                               <a href="" class=""><li class=""><i class="fa fa-vimeo" aria-hidden="true"></i></li></a>
+                           </ul>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="app-footer-item__right">
+
+                      <ul class="">
+                          <a href="" class=""><li class="app-footer-item__right-title">What We Offer</li></a>
+                          <a href="" class=""><li class="">Project coordinator</li></a>
+                          <a href="" class=""><li class="">Digital Marketing Specialist</li></a>
+                          <a href="" class=""><li class="">Service Desk Agent</li></a>
+                          <a href="" class=""><li class="">HR Marketing Designer</li></a>
+                          <a href="" class=""><li class="">Senior Angular Software Engineer</li></a>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="app-footer-item__right">
+
+                    <ul class="">
+                        <a href="" class=""><li class="app-footer-item__right-title">Services</li></a>
+                        <a href="" class=""><li class="">Corparate Solution</li></a>
+                        <a href="" class=""><li class="">Call Center Solutions</li></a>
+                        <a href="" class=""><li class="">Cloud Development</li></a>
+                        <a href="" class=""><li class="">IOS/MacOS Apps</li></a>
+                        <a href="" class=""><li class="">Android Applications</li></a>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="app-footer-item__right">
+
+                    <ul class="">
+                        <a href="" class=""><li class="app-footer-item__right-title">Contacts</li></a>
+                        <a href="" class=""><li class=""><i class="icon-map-custom fa fa-map-marker" aria-hidden="true"></i> 301 S Irving Blvd Los Angeles, CA 90020</li></a>
+                        <a href="" class=""><li class="">
+                          <div class="app-footer-item__right-phone">
+                            <div class="app-footer-item__right-phone-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                            <div class="app-footer-item__right-phone-detail">
+                              <span class="">+1 323-913-4688</span>
+                              <span class="">+1 323-888-4554</span>
+                            </div>
+                        </div>
+                      </li></a>
+                        <a href="" class=""><li class=""> <div class="app-footer-item__right-phone">
+                          <div class="app-footer-item__right-phone-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                          <div class="app-footer-item__right-phone-detail">
+                            <span class="">hello@example.com</span>
+                            <span class="">info@examble.com</span>
+                          </div>
+                      </div></li></a>
+                        
+                        
+                    </ul>
+                  </div>
+                </div>
+             </div>
+             
        </div>
-   </header>
+      
+   </footer>
+   <section class="app-footer-last container-fluid">
+      <div class="container">
+          <div class="row">
+             <div class="col-md-6 col-sm-12">
+                <div class="app-footer-last__left">
+                  
+                    <ul>
+                      <a href="" class=""><li class="">Terms and Conditions</li>
+                        <a href="" class=""><li class="">Privacy Policy</li>
+                      </a>
+                    </ul>
+                </div>
+             </div>
+             <div class="col-md-6 col-sm-12">
+              <div class="app-footer-last__right">
+                <span class="">© 2022 PathSoft. All rights reserved.</span>
+              </div>
+             </div>
+          </div>
+      </div>
+   </section>
+   <script src="./js/index.js">
+   
+     
+   </script>
+  
 </body>
 </html>
